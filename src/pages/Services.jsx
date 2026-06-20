@@ -1,0 +1,81 @@
+import { Link } from 'react-router-dom'
+import './Page.css'
+
+export default function Services() {
+  return (
+    <main className="page">
+      <section className="page-hero">
+        <div className="container">
+          <p className="section-label">What We Do</p>
+          <h1 className="section-heading" style={{fontSize:'clamp(2rem,4vw,3rem)'}}>End-to-End Engineering Solutions</h1>
+          <p className="section-subhead">From strategy to integration, supply chain to support.</p>
+        </div>
+      </section>
+
+      <section>
+        <div className="container content-block">
+          <div className="content-text">
+            <p className="section-label">Engineering Advisory</p>
+            <h2 className="section-heading">Strategic Technical Advisory</h2>
+            <p className="body-text">Kinetic Bridge provides strategic technical advisory across electrification programs — helping teams translate complex engineering, product, and market constraints into practical execution plans. We bring decades of experience across aerospace, automotive, defense, and energy to every engagement.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-accent">
+        <div className="container">
+          <div className="service-links-grid">
+            {[
+              { label: 'Battery Cell & Pack Sourcing', to: '/battery-cell-pack-sourcing', desc: 'Verified genuine cells and packs. All form factors. NDAA-compliant supply chain.' },
+              { label: 'Low Voltage Manufacturing', to: '/low-voltage-manufacturing', desc: 'North American contract manufacturing for defense, aerospace, and commercial battery products.' },
+              { label: 'BMS Distribution', to: '/bms-distribution', desc: 'Authorized U.S. distributor of Lithium Balance BMS with full engineering integration support.' },
+            ].map(s => (
+              <Link key={s.to} to={s.to} className="service-link-card">
+                <h3>{s.label}</h3>
+                <p>{s.desc}</p>
+                <span>Explore →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <p className="section-label">Talent Partnership</p>
+          <h2 className="section-heading">Top-Tier Talent, On Demand</h2>
+          <div className="content-block">
+            <div className="content-text">
+              <p className="body-text">Through our partnership with Motive Workforce Solutions, Kinetic Bridge sources and deploys highly qualified engineering talent from across the United States — matched precisely to serve our client's project needs.</p>
+              <div className="talent-callout">
+                <p className="callout-label">UNIQUE VALUE-ADD</p>
+                <p>Clients retain the option to hire placed resources full-time at project completion. No other engineering consultancy offers this flexibility.</p>
+              </div>
+            </div>
+            <div className="talent-features">
+              {[
+                'Nationwide talent network across all engineering disciplines',
+                'Blended model — leadership + sourced specialists',
+                'Rapid deployment to keep programs on schedule',
+                'Cost-efficient staffing without sacrificing quality',
+                'Seamless transition path from contract to full-time hire',
+              ].map(f => (
+                <div key={f} className="talent-feature">
+                  <span className="feature-dot" />
+                  <span>{f}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-accent cta-section">
+        <div className="container" style={{textAlign:'center'}}>
+          <h2 className="section-heading">Ready to Engage?</h2>
+          <Link to="/contact" className="btn-primary">Contact Us</Link>
+        </div>
+      </section>
+    </main>
+  )
+}
