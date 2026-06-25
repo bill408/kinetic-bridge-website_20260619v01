@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import LithiumBalanceLogo from '../components/LithiumBalanceLogo'
 import './Page.css'
 
 const valueProps = [
@@ -17,6 +18,14 @@ export default function BMSDistribution() {
           <h1 className="section-heading" style={{fontSize:'clamp(2rem,4vw,3rem)'}}>Authorized U.S. Distributor<br />of Lithium Balance BMS</h1>
           <p className="section-subhead">Engineering-level knowledge. Direct supply chain. Full integration support.</p>
           <Link to="/contact?type=bms" className="btn-primary">Inquire About BMS Solutions</Link>
+        </div>
+      </section>
+
+      <section style={{padding:'64px 0',background:'#f8f9fa',borderBottom:'1px solid rgba(0,0,0,0.08)'}}>
+        <div className="container" style={{display:'flex',flexDirection:'column',alignItems:'center',gap:'20px',textAlign:'center'}}>
+          <p style={{fontFamily:'var(--font-label)',fontSize:'11px',fontWeight:'600',letterSpacing:'0.2em',textTransform:'uppercase',color:'#40625d'}}>In Partnership With</p>
+          <LithiumBalanceLogo height={72} />
+          <p style={{fontFamily:'var(--font-subtitle)',fontStyle:'italic',fontSize:'1.1rem',color:'#555',maxWidth:'480px',lineHeight:'1.5'}}>Authorized U.S. distributor — delivering Lithium Balance BMS products with full engineering integration support.</p>
         </div>
       </section>
 

@@ -43,6 +43,9 @@ export default function Services() {
       <section>
         <div className="container">
           <p className="section-label">Talent Partnership</p>
+          <div className="partner-logo-wrap">
+            <img src="/images/Motive_Workforce_Logo.png" alt="Motive Workforce Solutions" />
+          </div>
           <h2 className="section-heading">Top-Tier Talent, On Demand</h2>
           <div className="content-block">
             <div className="content-text">

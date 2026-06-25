@@ -1,14 +1,14 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg-primary: #111827;
-  --bg-accent: #1f2937;
+  --bg-primary: #1e2d3d;
+  --bg-accent: #273647;
   --accent-green: #40625d;
   --accent-green-hover: #4e7a74;
   --lines: #aeb7bf;
-  --lines-subtle: rgba(174,183,191,0.2);
+  --lines-subtle: rgba(174,183,191,0.25);
   --white: #ffffff;
-  --text-muted: #aeb7bf;
+  --text-muted: #c4cdd5;
 
   --font-title: 'Cinzel', serif;
   --font-subtitle: 'Cormorant Garamond', serif;
