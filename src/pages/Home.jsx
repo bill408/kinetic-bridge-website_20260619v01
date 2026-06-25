@@ -87,6 +87,12 @@ export default function Home() {
               alt="A glowing Kinetic Bridge spanning a deep canyon toward a futuristic city skyline"
               className="chasm-image"
             />
+            <span className="chasm-overlay chasm-overlay-left">
+              Innovation<br />Potential
+            </span>
+            <span className="chasm-overlay chasm-overlay-right">
+              Real-World<br />Performance
+            </span>
           </div>
         </div>
       </section>
