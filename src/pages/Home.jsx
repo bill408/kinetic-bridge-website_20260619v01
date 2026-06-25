@@ -82,15 +82,11 @@ export default function Home() {
             </ul>
           </div>
           <div className="chasm-visual">
-            <div className="chasm-side">
-              <span>INNOVATION<br />POTENTIAL</span>
-            </div>
-            <div className="chasm-bridge">
-              <div className="chasm-label">KINETIC BRIDGE</div>
-            </div>
-            <div className="chasm-side right">
-              <span>REAL-WORLD<br />PERFORMANCE</span>
-            </div>
+            <img
+              src="/kinetic-bridge.png"
+              alt="A glowing Kinetic Bridge spanning a deep canyon toward a futuristic city skyline"
+              className="chasm-image"
+            />
           </div>
         </div>
       </section>
