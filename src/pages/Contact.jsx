@@ -73,18 +73,28 @@ export default function Contact() {
           <div className="contact-info">
             <div>
               <p className="contact-info-label">Email</p>
-              <p className="contact-info-value"><a href="mailto:info@bevco-tech.com" style={{color:'var(--white)'}}>info@bevco-tech.com</a></p>
+              <p className="contact-info-value"><a href="mailto:info@kinetic-bridge.com" style={{color:'var(--white)'}}>info@kinetic-bridge.com</a></p>
             </div>
             <div>
               <p className="contact-info-label">Phone</p>
               <p className="contact-info-value"><a href="tel:+19493715527" style={{color:'var(--white)'}}>(949) 371-5527</a></p>
             </div>
-            <div>
-              <p className="contact-info-label">Website</p>
-              <p className="contact-info-value"><a href="https://www.bevco-tech.com" target="_blank" rel="noreferrer" style={{color:'var(--white)'}}>www.bevco-tech.com</a></p>
-            </div>
             <div style={{marginTop:'16px',paddingTop:'32px',borderTop:'1px solid var(--lines-subtle)'}}>
-              <p className="body-text">Kinetic Bridge works with government agencies, commercial operators, and engineering teams across defense, aerospace, automotive, and energy sectors.</p>
+              <p className="contact-info-label">Company Information</p>
+              <p className="body-text" style={{marginBottom:'8px'}}>Greater Los Angeles Area, CA</p>
+              <p className="contact-info-label" style={{marginTop:'24px',marginBottom:'12px'}}>What to Expect</p>
+              <ul style={{listStyle:'none',padding:0,margin:0,display:'flex',flexDirection:'column',gap:'10px'}}>
+                {[
+                  'We typically respond within 1–2 business days',
+                  'Initial consultations focus on understanding your platform and requirements',
+                  'We will provide a scoped proposal based on your project needs',
+                ].map(item => (
+                  <li key={item} style={{fontFamily:'var(--font-body)',fontSize:'0.9rem',color:'var(--text-muted)',paddingLeft:'16px',position:'relative'}}>
+                    <span style={{position:'absolute',left:0,top:'6px',width:'6px',height:'1px',background:'var(--accent-green)',display:'inline-block'}} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

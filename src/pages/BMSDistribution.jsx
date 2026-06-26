@@ -61,6 +61,25 @@ export default function BMSDistribution() {
                 ))}
               </div>
             </div>
+            <div className="bms-card">
+              <p className="bms-card-label">Hallmark Product</p>
+              <h3>n-BMS</h3>
+              <p className="bms-card-sub">Modular, scalable BMS for automotive and industrial battery applications</p>
+              <div className="bms-features">
+                {[
+                  'Up to 32 CMUs — supports up to 384 cells / 1000V',
+                  'Shunt, Hall effect, and CAN-based current sensing',
+                  'isoSPI daisy-chain CMU communication',
+                  'ISO 26262 option available — n3-BMS',
+                  'New: 18-channel CMU option now available',
+                ].map(f => (
+                  <div key={f} className="bms-feature">
+                    <span className="bms-dot" />
+                    <span>{f}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

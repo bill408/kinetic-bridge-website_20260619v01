@@ -1,12 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
 
-const clients = [
-  'Romeo Power','Moog','New Eagle','Faraday Future',
-  'Our Next Energy','Motivo','Boeing','Nissan',
-  'eVo lectric','SpaceX','Zodiac Aerospace','Llama'
-]
-
 const services = [
   {
     icon: '⚙️',
@@ -82,13 +76,11 @@ export default function Home() {
             </ul>
           </div>
           <div className="chasm-visual">
-            <div className="chasm-side">
+            <img src="/images/Kinetic_Bridge_v1.pptx.png" alt="Kinetic Bridge" className="chasm-image" />
+            <div className="chasm-overlay left">
               <span>INNOVATION<br />POTENTIAL</span>
             </div>
-            <div className="chasm-bridge">
-              <div className="chasm-label">KINETIC BRIDGE</div>
-            </div>
-            <div className="chasm-side right">
+            <div className="chasm-overlay right">
               <span>REAL-WORLD<br />PERFORMANCE</span>
             </div>
           </div>
@@ -129,20 +121,6 @@ export default function Home() {
                 <p className="service-desc">{s.desc}</p>
                 <span className="service-link">Learn more →</span>
               </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PEDIGREE */}
-      <section>
-        <div className="container">
-          <p className="section-label">Who We've Worked With</p>
-          <h2 className="section-heading">A Pedigree Built for What's Next</h2>
-          <p className="section-subhead">Decades across aerospace, automotive, defense, and energy.</p>
-          <div className="clients-grid">
-            {clients.map(c => (
-              <div key={c} className="client-card">{c}</div>
             ))}
           </div>
         </div>
