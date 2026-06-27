@@ -41,7 +41,7 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li><Link to="/contact" className="navbar-cta btn-primary">Get In Touch</Link></li>
+          <li><Link to="/contact" className={`navbar-cta${location.pathname === '/contact' ? ' active' : ''}`}>Get In Touch</Link></li>
         </ul>
       </div>
     </nav>

@@ -84,6 +84,11 @@
   background: transparent !important;
 }
 
+.navbar-cta.active {
+  background: var(--accent-green) !important;
+  color: var(--white) !important;
+}
+
 .navbar-toggle {
   display: none;
   flex-direction: column;
