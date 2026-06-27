@@ -15,7 +15,7 @@ export default function LowVoltage() {
       <section className="page-hero" style={{backgroundImage:'linear-gradient(rgba(10,16,26,0.65),rgba(10,16,26,0.72)),url(/images/industries-drone.jpg)',backgroundSize:'cover',backgroundPosition:'center'}}>
         <div className="container">
           <p className="section-label">Low Voltage Pack Manufacturing</p>
-          <h1 className="section-heading" style={{fontSize:'clamp(2rem,4vw,3rem)'}}>North American Manufacturing.<br />Engineering-Led. Mission-Ready.</h1>
+          <h1 className="section-heading" style={{fontSize:'clamp(2rem,4vw,3rem)'}}>North American Manufacturing.</h1>
           <p className="section-subhead">Low-voltage battery product manufacturing at highest quality and lowest cost.</p>
           <Link to="/contact?type=manufacturing" className="btn-primary">Request a Manufacturing Quote</Link>
         </div>
@@ -25,7 +25,7 @@ export default function LowVoltage() {
         <div className="container content-block">
           <div className="content-text">
             <p className="section-label">How It Works</p>
-            <h2 className="section-heading">Engineering-Led Production</h2>
+            <h2 className="section-heading">Engineering-Led. Mission-Ready Production</h2>
             <p className="body-text">Kinetic Bridge leads design, requirements, and program management while our North American manufacturing partner executes production and scale — delivering the highest quality at the lowest cost.</p>
             <div style={{marginTop:'2rem',display:'flex',flexDirection:'column',gap:'14px'}}>
               {capabilities.map(c => (
@@ -39,7 +39,7 @@ export default function LowVoltage() {
           <div>
             <p className="section-label">Standards & Certifications</p>
             <h2 className="section-heading">Built to the Highest Standards</h2>
-            <p className="body-text" style={{marginBottom:'1.5rem'}}>Our manufacturing process is designed to meet the most demanding industry and regulatory requirements.</p>
+            <p className="body-text" style={{marginBottom:'1.5rem'}}>Our manufacturing process is designed to meet the most demanding industry and regulatory requirements. We have experience with:</p>
             <div className="cert-grid">
               {certs.map(c => (
                 <div key={c} className="cert-badge">{c}</div>
@@ -51,7 +51,7 @@ export default function LowVoltage() {
 
       <section className="page-image-banner" style={{backgroundImage:'linear-gradient(rgba(10,16,26,0.45),rgba(10,16,26,0.55)),url(/images/testing-lab.jpg)',backgroundSize:'cover',backgroundPosition:'center'}}>
         <div className="container">
-          <p className="section-label" style={{color:'rgba(255,255,255,0.7)'}}>Our Facilities</p>
+          <p className="section-label" style={{color:'rgba(255,255,255,0.7)'}}>Verification and Validation</p>
           <h2 className="section-heading" style={{color:'var(--white)'}}>Rigorous Testing. Every Build.</h2>
         </div>
       </section>

@@ -59,19 +59,29 @@
   padding: 0 6px;
 }
 
-.navbar-links a:hover,
-.navbar-links a.active {
+.navbar-links a:hover {
   color: var(--white);
+}
+
+.navbar-links a.active {
+  background: var(--accent-green);
+  color: var(--white);
+  padding: 6px 12px;
 }
 
 .navbar-cta {
   font-size: 11px !important;
-  padding: 10px 20px !important;
+  padding: 6px 12px !important;
+  background: transparent !important;
+  color: var(--text-muted) !important;
+  border: none !important;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+
+.navbar-cta:hover {
   color: var(--white) !important;
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
+  background: transparent !important;
 }
 
 .navbar-toggle {
