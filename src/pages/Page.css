@@ -5,6 +5,12 @@
   border-bottom: 1px solid var(--lines-subtle);
 }
 
+.page-image-banner {
+  padding: 80px 0;
+  border-top: 1px solid var(--lines-subtle);
+  border-bottom: 1px solid var(--lines-subtle);
+}
+
 .body-text {
   font-family: var(--font-body);
   font-size: 1rem;

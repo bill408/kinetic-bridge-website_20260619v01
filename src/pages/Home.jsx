@@ -76,7 +76,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="chasm-visual">
-            <img src="/images/Kinetic_Bridge_v1.pptx.png" alt="Kinetic Bridge" className="chasm-image" />
+            <img src="/images/bridge.png" alt="Kinetic Bridge" className="chasm-image" />
             <div className="chasm-overlay left">
               <span>INNOVATION<br />POTENTIAL</span>
             </div>

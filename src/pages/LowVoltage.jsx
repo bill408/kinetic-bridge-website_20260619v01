@@ -12,7 +12,7 @@ const capabilities = [
 export default function LowVoltage() {
   return (
     <main className="page">
-      <section className="page-hero">
+      <section className="page-hero" style={{backgroundImage:'linear-gradient(rgba(10,16,26,0.65),rgba(10,16,26,0.72)),url(/images/industries-drone.jpg)',backgroundSize:'cover',backgroundPosition:'center'}}>
         <div className="container">
           <p className="section-label">Low Voltage Pack Manufacturing</p>
           <h1 className="section-heading" style={{fontSize:'clamp(2rem,4vw,3rem)'}}>North American Manufacturing.<br />Engineering-Led. Mission-Ready.</h1>
@@ -46,6 +46,13 @@ export default function LowVoltage() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="page-image-banner" style={{backgroundImage:'linear-gradient(rgba(10,16,26,0.45),rgba(10,16,26,0.55)),url(/images/testing-lab.jpg)',backgroundSize:'cover',backgroundPosition:'center'}}>
+        <div className="container">
+          <p className="section-label" style={{color:'rgba(255,255,255,0.7)'}}>Our Facilities</p>
+          <h2 className="section-heading" style={{color:'var(--white)'}}>Rigorous Testing. Every Build.</h2>
         </div>
       </section>
 

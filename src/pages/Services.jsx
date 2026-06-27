@@ -4,7 +4,7 @@ import './Page.css'
 export default function Services() {
   return (
     <main className="page">
-      <section className="page-hero">
+      <section className="page-hero" style={{backgroundImage:'linear-gradient(rgba(10,16,26,0.65),rgba(10,16,26,0.72)),url(/images/services-engineering.jpg)',backgroundSize:'cover',backgroundPosition:'center'}}>
         <div className="container">
           <p className="section-label">What We Do</p>
           <h1 className="section-heading" style={{fontSize:'clamp(2rem,4vw,3rem)'}}>End-to-End Engineering Solutions</h1>
@@ -37,6 +37,13 @@ export default function Services() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="page-image-banner" style={{backgroundImage:'linear-gradient(rgba(10,16,26,0.45),rgba(10,16,26,0.55)),url(/images/industries-ev.jpg)',backgroundSize:'cover',backgroundPosition:'center'}}>
+        <div className="container">
+          <p className="section-label" style={{color:'rgba(255,255,255,0.7)'}}>Industries Served</p>
+          <h2 className="section-heading" style={{color:'var(--white)'}}>Electrification Across Every Sector</h2>
         </div>
       </section>
 
