@@ -17,6 +17,7 @@ export default function Footer() {
           <Link to="/contact">Contact</Link>
         </nav>
         <p className="footer-copy">© 2026 Kinetic Bridge. All rights reserved.</p>
+        <p className="footer-copy">Kinetic Bridge is a DBA of Bevco LLC</p>
       </div>
     </footer>
   )
