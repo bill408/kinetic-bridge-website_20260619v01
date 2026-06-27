@@ -75,10 +75,6 @@ export default function Contact() {
               <p className="contact-info-label">Email</p>
               <p className="contact-info-value"><a href="mailto:info@kinetic-bridge.com" style={{color:'var(--white)'}}>info@kinetic-bridge.com</a></p>
             </div>
-            <div>
-              <p className="contact-info-label">Phone</p>
-              <p className="contact-info-value"><a href="tel:+19493715527" style={{color:'var(--white)'}}>(949) 371-5527</a></p>
-            </div>
             <div style={{marginTop:'16px',paddingTop:'32px',borderTop:'1px solid var(--lines-subtle)'}}>
               <p className="contact-info-label">Company Information</p>
               <p className="body-text" style={{marginBottom:'8px'}}>Greater Los Angeles Area, CA</p>
