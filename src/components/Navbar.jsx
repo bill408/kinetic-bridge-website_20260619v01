@@ -9,7 +9,6 @@ const links = [
   { label: 'Low Voltage Manufacturing', to: '/low-voltage-manufacturing' },
   { label: 'BMS Distribution', to: '/bms-distribution' },
   { label: 'About', to: '/about' },
-  { label: 'Contact', to: '/contact' },
 ]
 
 export default function Navbar() {
@@ -29,7 +28,7 @@ export default function Navbar() {
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="navbar-inner container">
         <Link to="/" className="navbar-logo">
-          <img src="/images/KB_horiz_darkBG.png" alt="Kinetic Bridge" className="navbar-logo-img" />
+          <img src="/images/kb_logo_transparent_bg_dk.png" alt="Kinetic Bridge" className="navbar-logo-img" />
         </Link>
         <button className="navbar-toggle" onClick={() => setOpen(!open)} aria-label="Menu">
           <span /><span /><span />

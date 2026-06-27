@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-inner">
         <Link to="/" className="footer-logo">
-          <img src="/images/KB_horiz_darkBG.png" alt="Kinetic Bridge" className="footer-logo-img" />
+          <img src="/images/kb_logo_transparent_bg_dk.png" alt="Kinetic Bridge" className="footer-logo-img" />
         </Link>
         <nav className="footer-nav">
           <Link to="/services">Services</Link>

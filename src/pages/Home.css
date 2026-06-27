@@ -48,6 +48,7 @@
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* PROBLEM */
@@ -87,8 +88,37 @@
 .chasm-visual {
   position: relative;
   height: 320px;
-  overflow: hidden;
-  border: 1px solid var(--lines-subtle);
+  overflow: visible;
+  padding: 12px;
+  background: #2a3d50;
+  border: 1px solid var(--accent-green);
+  box-shadow: 0 0 0 1px var(--lines-subtle), 6px 6px 0 0 rgba(64,98,93,0.35);
+}
+
+.chasm-visual::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: 5px;
+  bottom: 5px;
+  border-top: 1px solid rgba(174,183,191,0.2);
+  border-left: 1px solid rgba(174,183,191,0.2);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.chasm-visual::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: -5px;
+  bottom: -5px;
+  border-bottom: 1px solid rgba(174,183,191,0.2);
+  border-right: 1px solid rgba(174,183,191,0.2);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .chasm-image {
@@ -97,6 +127,7 @@
   object-fit: cover;
   object-position: center;
   display: block;
+  overflow: hidden;
 }
 
 .chasm-overlay {

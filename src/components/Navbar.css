@@ -31,17 +31,18 @@
 }
 
 .navbar-logo-img {
-  height: 42px;
+  height: 80px;
   width: auto;
   display: block;
-  mix-blend-mode: screen;
 }
 
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  justify-content: space-evenly;
+  flex: 1;
   list-style: none;
+  gap: 0;
 }
 
 .navbar-links a {
