@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import KBLogo from './KBLogo'
 import './Navbar.css'
 
 const links = [
@@ -30,8 +29,7 @@ export default function Navbar() {
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="navbar-inner container">
         <Link to="/" className="navbar-logo">
-          <KBLogo size={60} />
-          <span className="navbar-wordmark">KINETIC BRIDGE</span>
+          <img src="/images/KB_horiz_darkBG.png" alt="Kinetic Bridge" className="navbar-logo-img" />
         </Link>
         <button className="navbar-toggle" onClick={() => setOpen(!open)} aria-label="Menu">
           <span /><span /><span />

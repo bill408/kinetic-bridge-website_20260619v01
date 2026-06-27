@@ -18,8 +18,12 @@
 .hero-content {
   position: relative;
   max-width: 700px;
-  padding-top: 120px;
-  padding-bottom: 80px;
+  padding: 64px 48px;
+  margin-top: 80px;
+  background: rgba(10, 16, 26, 0.6);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(174,183,191,0.12);
+  text-align: center;
 }
 
 .hero-headline {

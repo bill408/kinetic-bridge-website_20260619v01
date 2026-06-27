@@ -38,7 +38,7 @@ img { max-width: 100%; }
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--accent-green);
+  color: #7bbdb6;
   margin-bottom: 1rem;
 }
 

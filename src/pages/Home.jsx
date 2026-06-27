@@ -4,7 +4,7 @@ import './Home.css'
 const services = [
   {
     icon: '⚙️',
-    title: 'Engineering Advisory',
+    title: 'Engineering Services & Advisory',
     desc: 'Strategic and technical advisory for electrification programs — from concept through deployment.',
     to: '/services',
   },
@@ -28,14 +28,6 @@ const services = [
   },
 ]
 
-const whyUs = [
-  { title: 'End-to-End Expertise', desc: 'From concept to deployment and beyond.' },
-  { title: 'Deep Technical Knowledge', desc: 'Battery systems, integration, and advanced engineering.' },
-  { title: 'Trusted Partnerships', desc: 'Strong relationships across industry and government.' },
-  { title: 'Agile & Responsive', desc: 'Fast decision-making and adaptable execution.' },
-  { title: 'Quality & Compliance', desc: 'Rigorous processes and industry-leading standards.' },
-  { title: 'Focused on Results', desc: 'Delivering measurable value and long-term success.' },
-]
 
 const steps = [
   { n: '01', title: 'Discover', desc: 'Understand goals, relationships, and strategic context across projects, partnerships, and operations.' },
@@ -126,27 +118,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY */}
-      <section className="bg-accent">
-        <div className="container">
-          <p className="section-label">Why Us</p>
-          <h2 className="section-heading">Why Kinetic Bridge</h2>
-          <div className="why-grid">
-            {whyUs.map(w => (
-              <div key={w.title} className="why-card">
-                <div className="why-accent" />
-                <h3 className="why-title">{w.title}</h3>
-                <p className="why-desc">{w.desc}</p>
-              </div>
-            ))}
-          </div>
-          <blockquote className="pull-quote">
-            "Building practical bridges between technology, capital, and execution."
-          </blockquote>
-        </div>
-      </section>
 
-      {/* CTA BANNER */}
+{/* CTA BANNER */}
       <section className="cta-banner">
         <div className="container cta-banner-inner">
           <h2 className="cta-banner-headline">Let's Engineer What's Next.</h2>

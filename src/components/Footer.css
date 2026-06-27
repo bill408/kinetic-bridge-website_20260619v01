@@ -15,15 +15,13 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
 }
 
-.footer-logo span {
-  font-family: var(--font-title);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: var(--white);
+.footer-logo-img {
+  height: 54px;
+  width: auto;
+  display: block;
+  mix-blend-mode: screen;
 }
 
 .footer-nav {
