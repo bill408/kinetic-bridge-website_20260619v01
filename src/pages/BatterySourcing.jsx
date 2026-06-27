@@ -11,7 +11,7 @@ const features = [
 export default function BatterySourcing() {
   return (
     <main className="page">
-      <section className="page-hero">
+      <section className="page-hero" style={{backgroundImage:'linear-gradient(rgba(10,16,26,0.65),rgba(10,16,26,0.72)),url(/images/sourcing.jpg)',backgroundSize:'cover',backgroundPosition:'center'}}>
         <div className="container">
           <p className="section-label">Battery Cell & Pack Sourcing</p>
           <h1 className="section-heading" style={{fontSize:'clamp(2rem,4vw,3rem)'}}>Genuine Cells. Global Network.<br />Door-to-Door Delivery.</h1>

@@ -12,7 +12,7 @@ const valueProps = [
 export default function BMSDistribution() {
   return (
     <main className="page">
-      <section className="page-hero">
+      <section className="page-hero" style={{backgroundImage:'linear-gradient(rgba(10,16,26,0.65),rgba(10,16,26,0.72)),url(/images/bms.jpg)',backgroundSize:'cover',backgroundPosition:'center'}}>
         <div className="container">
           <p className="section-label">BMS Distribution</p>
           <h1 className="section-heading" style={{fontSize:'clamp(2rem,4vw,3rem)'}}>Authorized U.S. Distributor<br />of Lithium Balance BMS</h1>
