@@ -22,24 +22,6 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="bg-accent">
-        <div className="container">
-          <div className="service-links-grid">
-            {[
-              { label: 'Battery Cell & Pack Sourcing', to: '/battery-cell-pack-sourcing', desc: 'Verified genuine cells and packs. All form factors. NDAA-compliant supply chain.' },
-              { label: 'Low Voltage Manufacturing', to: '/low-voltage-manufacturing', desc: 'North American contract manufacturing for defense, aerospace, and commercial battery products.' },
-              { label: 'BMS Distribution', to: '/bms-distribution', desc: 'Authorized U.S. distributor of Lithium Balance BMS with full engineering integration support.' },
-            ].map(s => (
-              <Link key={s.to} to={s.to} className="service-link-card">
-                <h3>{s.label}</h3>
-                <p>{s.desc}</p>
-                <span>Explore →</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="page-image-banner" style={{backgroundImage:'linear-gradient(rgba(10,16,26,0.45),rgba(10,16,26,0.55)),url(/images/industries-ev.jpg)',backgroundSize:'cover',backgroundPosition:'center'}}>
         <div className="container">
           <p className="section-label" style={{color:'rgba(255,255,255,0.7)'}}>Industries Served</p>

@@ -5,10 +5,36 @@
   border-bottom: 1px solid var(--lines-subtle);
 }
 
+.page-hero .container {
+  text-align: center;
+  background: rgba(10, 16, 26, 0.6);
+  padding: 48px 48px 40px;
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(174,183,191,0.12);
+  max-width: 860px;
+}
+
+.page-hero .container .body-text,
+.page-hero .container .section-label,
+.page-hero .container .section-heading,
+.page-hero .container .section-subhead {
+  max-width: 100%;
+}
+
+.page-image-banner .container {
+  background: rgba(10, 16, 26, 0.6);
+  padding: 40px 48px;
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(174,183,191,0.12);
+  display: inline-block;
+}
+
 .page-image-banner {
   padding: 80px 0;
   border-top: 1px solid var(--lines-subtle);
   border-bottom: 1px solid var(--lines-subtle);
+  display: flex;
+  justify-content: center;
 }
 
 .body-text {
@@ -184,15 +210,42 @@
 
 /* MAP IMAGE */
 .map-image-wrap {
-  border: 1px solid var(--lines-subtle);
-  overflow: hidden;
+  position: relative;
   background: #2a3d50;
+  padding: 12px;
+  border: 1px solid var(--accent-green);
+  box-shadow: 0 0 0 1px var(--lines-subtle), 6px 6px 0 0 rgba(64,98,93,0.35);
+}
+
+.map-image-wrap::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: 5px;
+  bottom: 5px;
+  border-top: 1px solid rgba(174,183,191,0.2);
+  border-left: 1px solid rgba(174,183,191,0.2);
+  pointer-events: none;
+}
+
+.map-image-wrap::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: -5px;
+  bottom: -5px;
+  border-bottom: 1px solid rgba(174,183,191,0.2);
+  border-right: 1px solid rgba(174,183,191,0.2);
+  pointer-events: none;
 }
 
 .map-image-wrap img {
   width: 100%;
   height: auto;
   display: block;
+  overflow: hidden;
 }
 
 /* BATTERY SOURCING PAGE */
@@ -354,24 +407,31 @@
 }
 
 /* ABOUT PAGE */
-.about-pedigree {
+.about-client-list {
+  list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-top: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 32px;
+  margin-top: 0.5rem;
 }
 
-.about-client {
-  background: var(--bg-primary);
-  border: 1px solid var(--lines-subtle);
-  padding: 20px;
-  text-align: center;
-  font-family: var(--font-label);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.about-client-list li {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
   color: var(--text-muted);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.about-client-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 1px;
+  background: var(--accent-green);
 }
 
 .about-why {

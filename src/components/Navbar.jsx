@@ -7,7 +7,7 @@ const links = [
   { label: 'Home', to: '/' },
   { label: 'Services', to: '/services' },
   { label: 'Battery Sourcing', to: '/battery-cell-pack-sourcing' },
-  { label: 'LV Manufacturing', to: '/low-voltage-manufacturing' },
+  { label: 'Low Voltage Manufacturing', to: '/low-voltage-manufacturing' },
   { label: 'BMS Distribution', to: '/bms-distribution' },
   { label: 'About', to: '/about' },
   { label: 'Contact', to: '/contact' },
@@ -30,7 +30,7 @@ export default function Navbar() {
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="navbar-inner container">
         <Link to="/" className="navbar-logo">
-          <KBLogo size={40} />
+          <KBLogo size={60} />
           <span className="navbar-wordmark">KINETIC BRIDGE</span>
         </Link>
         <button className="navbar-toggle" onClick={() => setOpen(!open)} aria-label="Menu">

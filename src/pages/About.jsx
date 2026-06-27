@@ -3,7 +3,7 @@ import './Page.css'
 const clients = [
   'Romeo Power','Moog','New Eagle','Faraday Future',
   'Our Next Energy','Motivo','Boeing','Nissan',
-  'eVo lectric','SpaceX','Zodiac Aerospace','Llama'
+  'Evolectric','SpaceX','Zodiac Aerospace','Llama'
 ]
 
 const whyUs = [
@@ -37,12 +37,13 @@ export default function About() {
           <div>
             <p className="section-label">Our Reach</p>
             <h2 className="section-heading">Industry-Wide Experience</h2>
-            <p className="body-text" style={{marginBottom:'1.5rem'}}>Decades across aerospace, automotive, defense, and energy — the depth your program needs.</p>
-            <div className="about-pedigree">
+            <p className="body-text" style={{marginBottom:'0.75rem'}}>Decades across aerospace, automotive, defense, and energy — the depth your program needs.</p>
+            <p className="body-text" style={{marginBottom:'1.5rem'}}>Our leadership has experience working across multiple companies such as:</p>
+            <ul className="about-client-list">
               {clients.map(c => (
-                <div key={c} className="about-client">{c}</div>
+                <li key={c}>{c}</li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
       </section>
