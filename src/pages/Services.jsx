@@ -33,7 +33,7 @@ export default function Services() {
         <div className="container" style={{display:'flex',flexDirection:'column',alignItems:'center',gap:'20px',textAlign:'center'}}>
           <p style={{fontFamily:'var(--font-label)',fontSize:'11px',fontWeight:'600',letterSpacing:'0.2em',textTransform:'uppercase',color:'#40625d'}}>In Partnership With</p>
           <a href="https://www.motiveworkforce.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/images/Motive_Workforce_Logo.png" alt="Motive Workforce Solutions" style={{height:'72px',objectFit:'contain'}} />
+            <img src="/images/Motive_Workforce_Logo.png" alt="Motive Workforce Solutions" style={{height:'108px',objectFit:'contain'}} />
           </a>
           <p style={{fontFamily:'var(--font-subtitle)',fontStyle:'italic',fontSize:'1.1rem',color:'#555',maxWidth:'480px',lineHeight:'1.5'}}>Delivering top-tier engineering talent matched precisely to your project and program needs.</p>
         </div>

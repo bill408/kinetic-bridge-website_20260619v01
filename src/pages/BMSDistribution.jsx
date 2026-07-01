@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import LithiumBalanceLogo from '../components/LithiumBalanceLogo'
 import './Page.css'
 
 const valueProps = [
@@ -25,7 +24,7 @@ export default function BMSDistribution() {
         <div className="container" style={{display:'flex',flexDirection:'column',alignItems:'center',gap:'20px',textAlign:'center'}}>
           <p style={{fontFamily:'var(--font-label)',fontSize:'11px',fontWeight:'600',letterSpacing:'0.2em',textTransform:'uppercase',color:'#40625d'}}>In Partnership With</p>
           <a href="https://lithiumbalance.com/" target="_blank" rel="noopener noreferrer">
-            <LithiumBalanceLogo height={72} />
+            <img src="/images/Lithium-balance.png" alt="Lithium Balance" style={{height:'72px',objectFit:'contain'}} />
           </a>
           <p style={{fontFamily:'var(--font-subtitle)',fontStyle:'italic',fontSize:'1.1rem',color:'#555',maxWidth:'480px',lineHeight:'1.5'}}>Authorized U.S. distributor — delivering Lithium Balance BMS products with full engineering integration support.</p>
         </div>
